@@ -1,0 +1,18 @@
+﻿@model IEnumerable<satyamweb.Models.Customer>
+@{
+}
+<table class=" table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+    </tr>
+    @foreach (var cust in Model)
+    {
+        <tr>
+            <td>@cust.Name</td>
+            <td>@cust.Email</td>
+            <td>@cust.Mobile</td>
+        </tr>
+    }
+</table>
